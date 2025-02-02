@@ -10,19 +10,20 @@
 
 <body class="blue">
     <form class="form">
-        <fieldset class="white estilo">
+        <fieldset class="white estilo_login">
             
             <legend class="legend">login</legend>
-            <label class="capitalize" for="usuario">usuário</label>
-            <input class="capitalize" type="text" name="usuario" id="nome">
+
+            <label for="usuario">usuário</label>
+            <input type="text" name="usuario" id="usuario" required>
             
-            <label class="capitalize" for="senha">senha</label>
-            <input class="capitalize" type="password" id="senha">
+            <label for="senha">senha</label>
+            <input type="password" id="senha" required>
 
             <div>
-                <button class="btn capitalize">enviar</button>
-                <a href="cadastro.html">cadastra-se</a>
-                <a href="#">esqueci a senha</a>
+                <button class="btn">Login</button>
+                <a class="cadastro" href="cadastro.html">cadastra-se</a>
+                <a class="nova_senha" href="#">Esqueci a senha</a>
             </div>
 
         </fieldset>
