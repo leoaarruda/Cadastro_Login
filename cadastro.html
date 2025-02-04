@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
-<body class="blue">
+<body class="format">
     <form class="form">
-        <fieldset class="white estilo">
+        <fieldset class="fieldeset style_login">
 
-            <legend class="legend">cadastra-se</legend>
+            <legend class="legend">cadastro</legend>
 
-            <label for="usuario">usuário</label>
-            <input type="text" name="usuario" id="usuario" required>
+            <label for="user">usuário</label>
+            <input type="text" name="user" id="user" required>
 
             <label for="email">email</label>
-            <input type="text" name="email" id="email" required>
+            <input type="email" name="email" id="email" required>
 
-            <label for="senha">senha</label>
-            <input type="password" name="senha" id="senha">
+            <label for="pass">senha</label>
+            <input type="password" id="pass" required>
 
             <div>
-                <button class="btn">enviar</button>
-                <label for="">já possui cadastro?</label>
-                <a href="index.html">faça o login</a>
+                <button class="btn">cadastre-se</button>
+                <label class="register" for="register">já possui cadastro?</label>
+                <a class="new_pass" id="register" href="index.html" >Faça login</a>
             </div>
 
         </fieldset>

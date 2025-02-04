@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue: #3A68B7;
+    --white: #FFF;
+}
+
+.format {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth"100;
+    background-color: var(--blue);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.fieldeset {
+    background-color: var(--white);
+    min-height: 430px;
+    min-width: 450px;
+}
+
+.legend {
+    font-weight: 300;
+    padding: 7rem 0 .5rem .6rem;
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.legend::first-letter {
+    text-transform: uppercase;
+}
+
+.style_login {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.style_login>label {
+    margin-left: .7rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+
+#user, #pass, #email {
+    border: none;
+    padding: .5rem;
+    padding-left: 2;
+    border-bottom: 1px solid var(--blue);
+    width: 91%;
+    margin: 0 auto .4rem;
+    font-size: .9rem;
+}
+
+#user:focus, #pass:focus, #email:focus {
+    outline: 1px solid var(--blue);
+    transform: scaleY(1.1);
+    transition: 250ms;
+}
+
+.btn {
+    background-color: var(--blue);
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: var(--white);
+    padding: .65rem .6rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    margin-left: .72rem;
+    width: 30%;
+}
+
+.register {
+    text-transform: uppercase;
+    font-size: .6rem;
+    font-weight: 900;
+    margin-left: 7.8rem;
+    text-decoration: none;
+}
+
+.new_pass {
+    margin-left: 0.2rem;
+    font-size: .7rem;
+    text-decoration: none;
+}
