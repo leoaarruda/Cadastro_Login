@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --blue: #3A68B7;
+    --blue: #3a68b7;
     --white: #FFF;
 }
 
@@ -25,7 +25,10 @@
 .fieldeset {
     background-color: var(--white);
     min-width: 430px;
-    min-height: 350px;
+    min-height: 360px;
+    -webkit-box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 .legend {
@@ -45,6 +48,7 @@
     gap: .5rem;
     font-size: 0.9rem;
     border: none;
+    color: var(--blue);
 }
 
 .style_login>label {
@@ -52,7 +56,6 @@
     text-transform: uppercase;
     font-size: .75rem;
 }
-
 
 #user, #pass, #email {
     border: none;
@@ -66,6 +69,7 @@
 #user:focus, #pass:focus, #email:focus {
     outline: 1px solid var(--blue);
     transform: scaleY(1.1);
+    padding-left: .8rem;
     transition: 250ms;
 }
 
@@ -76,26 +80,37 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: .9rem;
-    padding: .6rem;
+    letter-spacing: 1px;
+    padding: .65rem;
     border-radius: 5px;
     margin-left: .8rem;
     width: 18%;
 }
 
 .register {
+    display: flex;
+    align-items: center;
+}
+
+.register_links{
     text-transform: uppercase;
     font-size: .85rem;
     font-weight: 900;
-    margin-left: 1rem;
+    letter-spacing: .8px;
+    margin-left: .7rem;
     text-decoration: none;
+    color: var(--blue);
 }
 
-.new_pass {
-    margin-left: 7.1rem;
+.new_pass > a{
+    margin-left: 7.4rem;
     font-size: .78rem;
     text-decoration: none;
+    color: var(--blue);
+    text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
-.nova_senha::first-letter {
-font-size: 1rem;
+.new_pass::first-letter {
+    text-transform: uppercase;
 }

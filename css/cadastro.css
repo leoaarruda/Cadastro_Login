@@ -26,6 +26,9 @@
     background-color: var(--white);
     min-height: 430px;
     min-width: 450px;
+    -webkit-box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -7px 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 .legend {
@@ -45,6 +48,7 @@
     gap: .5rem;
     font-size: 0.9rem;
     border: none;
+    color: var(--blue);
 }
 
 .style_login>label {
@@ -75,24 +79,42 @@
     text-transform: uppercase;
     font-size: .9rem;
     color: var(--white);
-    padding: .65rem .6rem;
+    padding: .65rem;
     border-radius: 5px;
     border: none;
     font-weight: 600;
-    margin-left: .72rem;
     width: 30%;
 }
 
 .register {
-    text-transform: uppercase;
-    font-size: .6rem;
-    font-weight: 900;
-    margin-left: 7.8rem;
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: 0.7rem;
+    color: var(--blue);
 }
 
-.new_pass {
-    margin-left: 0.2rem;
-    font-size: .7rem;
-    text-decoration: none;
+.register_links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .3rem;
+    font-size: .74rem;
 }
+
+.register_p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.new-pass, a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.new-pass, a::first-letter{
+    text-transform: uppercase;    
+}
+
